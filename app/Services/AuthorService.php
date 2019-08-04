@@ -44,4 +44,12 @@ class AuthorService
 	public function obtainAuthor($author){
 		return $this->performRequest('GET', "/authors/{$author}");
 	}
+
+	/**
+	 * Editar un autor por el id
+	 * @return string
+	 */
+	public function editAuthors($data, $author){
+		return $this->performRequest('PUT', "/authors/{$author}", $data);
+	}
 }
