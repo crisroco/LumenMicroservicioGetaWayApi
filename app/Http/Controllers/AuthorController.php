@@ -65,13 +65,6 @@ class AuthorController extends Controller
      * @return Illuminate\Http\Response
      */
     public function destroy($author){
-
-        // se verifica si el autor existe antes de hacer el delete
-        $author = Author::findOrFail($author);
-
-        $author->delete();
-
-        return $this->successResponse($author);
-
+        return $this->successResponse($this->authorService->deleteAuthor($author));
     }
 }

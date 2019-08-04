@@ -52,4 +52,12 @@ class AuthorService
 	public function editAuthors($data, $author){
 		return $this->performRequest('PUT', "/authors/{$author}", $data);
 	}
+
+	/**
+	 * Eliminar un autor por el id
+	 * @return string
+	 */
+	public function deleteAuthor($author){
+		return $this->performRequest("DELETE", "/authors/{$author}");
+	}
 }
