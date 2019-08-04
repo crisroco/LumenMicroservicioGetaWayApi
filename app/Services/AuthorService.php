@@ -31,10 +31,17 @@ class AuthorService
 
 	/**
 	 * Crear un autor enviado la solicitud al microservicio Author
-	 * @param type $data 
-	 * @return type
+	 * @return string
 	 */
 	public function createAuthors( $data){
 		return $this->performRequest('POST', '/authors', $data);
+	}
+
+	/**
+	 * Obtener un autor por el id
+	 * @return string
+	 */
+	public function obtainAuthor($author){
+		return $this->performRequest('GET', "/authors/{$author}");
 	}
 }
