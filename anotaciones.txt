@@ -7,3 +7,5 @@ Credenciales de acceso
 	Password grant client created successfully.
 	Client ID: 2
 	Client secret: 7MULNXSJvl5IFVc0gLV0eoYis4uEVm6ItBleNTze
+	Client ID: 3
+	Client secret: F0sogcHuS3O9ojpH2UzlbaVvRlQyUe8axokBJMCi
