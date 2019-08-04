@@ -13,10 +13,18 @@ class BookService
 	 */
 	public $baseUri;
 
+	/**
+	 * Secret para consumir el servicio de autores
+	 * @var string
+	 */
+	public $secret;
+
 	public function __construct()
 	{
 		//llamamos a la url que se configura en el archivo services.php
 		$this->baseUri = config('services.books.base_uri');
+		//llamamos al secret que se configura en el archivo services.php
+		$this->secret = config('services.books.secret');
 	}
 
 	/**
