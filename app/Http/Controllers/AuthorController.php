@@ -41,18 +41,7 @@ class AuthorController extends Controller
      * @return Illuminate\Http\Response
      */
     public function store(Request $request){
-        $rules =  [
-            'name' => 'required|max:255',
-            'gender' => 'required|max:255|in:male,female',
-            'country' => 'required|max:255',
-        ];
-
-        $this->validate($request, $rules);
-
-        $author = Author::create($request->all());
-
-        return $this->successResponse($author, Response::HTTP_CREATED);
-
+        return $this->successResponse($this->authorService->createAuthors($request->all()), Response::HTTP_CREATED);
     }
 
     /**

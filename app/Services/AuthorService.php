@@ -27,4 +27,14 @@ class AuthorService
 	public function obtainAuthors(){
 		return $this->performRequest('GET', '/authors');
 	}
+
+
+	/**
+	 * Crear un autor enviado la solicitud al microservicio Author
+	 * @param type $data 
+	 * @return type
+	 */
+	public function createAuthors( $data){
+		return $this->performRequest('POST', '/authors', $data);
+	}
 }
