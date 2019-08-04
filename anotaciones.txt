@@ -1,0 +1,9 @@
+Luego de instalar passport se podrá ejecutar el comando php artisan passport:install
+esto genera dos clientes y sus llaves publicas y privadas dentro de la carptea storage/ . Tener encuenta agregarlos al .gitignore
+
+Credenciales de acceso
+	Client ID: 1
+	Client secret: pyJH1IdCdZdNMHQuY2MhptCmdBcYRqBuZtZwsCp4
+	Password grant client created successfully.
+	Client ID: 2
+	Client secret: 7MULNXSJvl5IFVc0gLV0eoYis4uEVm6ItBleNTze
